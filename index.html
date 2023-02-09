@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Сnalculator</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230209135922">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+
+			<div class="page__con">
+				<div class="page__blocks">
+					<form class="page__form" method="POST">
+						<div class="page__block">
+							<label for="select1">Вибиріть тип підрахунку:</label>
+							<select class="page__select" name="" id="select1">
+								<option value="1">Безготівкова (Знижка %)</option>
+								<option value="2">Безготівкова (Знижка Сума)</option>
+								<option value="3">Готівка (Знижка %)
+								</option>
+								<option value="4">Готівка (Знижка Сума)</option>
+							</select>
+						</div>
+						<div class="page__block">
+							<label for="price">Вкажіть ціну агрегату</label>
+							<input autocomplete="off" type="number" name="price" data-error="Error" placeholder="Ціна" class="page__input" id="price">
+						</div>
+						<div class="page__block">
+							<label for="select2">Виберіть маржу агрегату</label>
+							<select class="page__select-prace" name="" id="select2">
+								<option value="0.11">11</option>
+								<option value="0.16">16</option>
+								<option value="0.18">18
+								</option>
+								<option selected value="0.2">20</option>
+							</select>
+						</div>
+						<div class="page__block">
+							<label for="sale">Вкажіть розмір знижки</label>
+							<input autocomplete="off" type="number" name="sale" data-error="Error" placeholder="Знижка" class="page__input" id="sale">
+						</div>
+						<div class="page__block">
+							<label for="region">Виберіть регіон</label>
+							<select class="page__select-prace" name="" id="region">
+								<option value="0.075">7.5</option>
+								<option value="0.05">5</option>
+								<option value="0.03">3
+								</option>
+							</select>
+						</div>
+						<div class="page__block">
+							<label for="salekof">Коєфіцієнт на підвищення ціни</label>
+							<input type="number" name="sale" data-error="Error" placeholder="Коєфіцієнт" class="page__input" value="19" id="salekof">
+						</div>
+
+
+
+						<button type="button" class="page__button">РОЗРАХУВАТИ</button>
+						<div class="page__resultat"></div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20230209135922"></script>
+</body>
+
+</html>
